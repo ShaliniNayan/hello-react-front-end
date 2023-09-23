@@ -14,7 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  <!-- - [🚀 Live Demo](#live-demo) -->
+    <!-- - [🚀 Live Demo](#live-demo) -->
 - [🎥 Video Demonstration](#video-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
@@ -33,7 +33,7 @@
 
 # 📖 i-budget <a name="about-project"></a>
 
-*Hello App* is a front end website that returns a random greeting by fetching a back end api. This uses [Hello Back End API](https://github.com/). 
+_Hello App_ is a front end website that returns a random greeting by fetching a back end api. This uses [Hello Back End API](https://github.com/https://github.com/ShaliniNayan/hello-rails-back-end.git).
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -46,12 +46,11 @@
   </ul>
 </details>
 
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- *Return a random Greeting*
+- _Return a random Greeting_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,7 +100,8 @@ To run the project, execute the following command:
 ```sh
   npm start
 ```
-<!-- 
+
+<!--
 ### Run tests
 
 To run tests, run the following command:
@@ -128,7 +128,7 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- *Return Greetings in deferent languages*
+- _Return Greetings in deferent languages_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
