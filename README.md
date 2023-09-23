@@ -33,7 +33,7 @@
 
 # 📖 i-budget <a name="about-project"></a>
 
-_Hello App_ is a front end website that returns a random greeting by fetching a back end api. This uses [Hello Back End API](https://github.com/https://github.com/ShaliniNayan/hello-rails-back-end.git).
+_Hello App_ is a front end website that returns a random greeting by fetching a back end api. This uses [Hello Back End API](https://github.com/ShaliniNayan/hello-rails-back-end.git).
 
 ## 🛠 Built With <a name="built-with"></a>
 
