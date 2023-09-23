@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchGreetingsThunk } from '../redux/slices/greetingsSlice';
 
 const Greeting = () => {
-  const greeting = useSelector((state) => state.greetings.greetings); 
+  const greeting = useSelector((state) => state.greetings.greetings);
   const dispatch = useDispatch();
 
   useEffect(() => {
