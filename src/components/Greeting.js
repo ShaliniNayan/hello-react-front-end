@@ -1,28 +1,22 @@
 import React, { useEffect } from 'react';
-import { connect } from 'react-redux';
-import { fetchRandomGreeting } from '../redux/actions';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchGreetingsThunk } from '../redux/slices/greetingsSlice';
 
-const Greeting = ({ greeting, fetchRandomGreeting }) => {
+const Greeting = () => {
+  const dispatch = useDispatch();
+
   useEffect(() => {
-    fetchRandomGreeting()
-      .then((response) => {
-        const { greeting } = response.data;
-        console.log('Random greeting:', greeting);
-      })
-      .catch((error) => console.error(error));
-  }, [fetchRandomGreeting]);
+    dispatch(fetchGreetingsThunk());
+  }, []);
 
-  return <div>{greeting}</div>;
+  const greetings = useSelector((state) => state.greetings.greetings);
+  const { greeting } = greetings;
+
+  return (
+    <div>
+      <h1>{greeting}</h1>
+    </div>
+  );
 };
 
-const mapStateToProps = (state) => {
-  return {
-    greeting: state.greeting,
-  };
-};
-
-const mapDispatchToProps = {
-  fetchRandomGreeting,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Greeting);
+export default Greeting;

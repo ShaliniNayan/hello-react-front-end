@@ -1,20 +1,21 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';  // Updated import
-import { Provider } from 'react-redux';
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Greeting from './components/Greeting';
-import store from './redux/store';
+import Home from './components/Home';
+import NaVBar from './components/Navbar';
 
-const App = () => {
+function App() {
   return (
-    <Provider store={store}>
-      <Router>
+    <div className="App">
+      <header className="App-header">
+        <NaVBar />
         <Routes>
-          <Route path="/" element={<Greeting />} />
+          <Route exact path="/*" element={<Home />} />
+          <Route exact path="/greet" element={<Greeting />} />
         </Routes>
-      </Router>
-    </Provider>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
